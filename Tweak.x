@@ -1,14 +1,12 @@
-%hook YTReelPlayerViewController
+%hook YTShortsPlayerViewController
 
-- (BOOL)shouldEnablePlayerBar { return YES; }
 - (BOOL)shouldAlwaysEnablePlayerBar { return YES; }
 - (BOOL)shouldEnablePlayerBarOnlyOnPause { return NO; }
 
 %end
 
-%hook YTReelPlayerViewControllerSub
+%hook YTReelPlayerViewController
 
-- (BOOL)shouldEnablePlayerBar { return YES; }
 - (BOOL)shouldAlwaysEnablePlayerBar { return YES; }
 - (BOOL)shouldEnablePlayerBarOnlyOnPause { return NO; }
 
@@ -17,7 +15,6 @@
 %hook YTColdConfig
 
 - (BOOL)iosEnableVideoPlayerScrubber { return YES; }
-- (BOOL)mobileShortsTabInlined { return YES; }
 
 %end
 
